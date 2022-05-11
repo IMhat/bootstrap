@@ -29,8 +29,8 @@ header {
 
     
 
-    background-image: url('https://i.pinimg.com/originals/4d/15/5c/4d155c6f7e5b1c6942059703c403ecaf.jpg');
-    height: 1000px;
+    background-image: url('./assets/background2.jpg');
+    height: 980px;
     background-position:calc(10%);
     background-size: cover;
        
@@ -96,7 +96,7 @@ button:active{
     padding-right: 20px;
 
     position: absolute;
-    top:90%;
+    top:70%;
     right: 59%;
 
     border:solid!important;
@@ -109,7 +109,7 @@ button:active{
 
 .title {
     position:absolute;
-    top:0%;
+    top: -100px;
     
     right: 50%;
 
@@ -117,6 +117,19 @@ button:active{
     font-size: 45px;
 
 }
+.title p {
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+
+.text__button button {
+  position: absolute;
+  top: 90%;
+  right: 15%;
+}
+
+
 
 .logo{
     width: 100px;
@@ -455,10 +468,31 @@ footer a {
 
 @media (max-width: 1000px) {
 
+    #row__f img {
+      position: absolute;
+      top: 70%;
+      right: 20%;
+      height: 250px;
+      color: #e2e2e2;
+      
+  }
+    .title p{
+      margin-top: 30px;
+      padding: 10px;
+      
+
+  }
+  .text__button button {
+    position: absolute;
+    top: 90%;
+    right: 15%;
+}
+
+
     .title{
         position: absolute;
         right: 30%;
-        top: 0%;
+        top: -10px;
     }
     .text__container {
       top: 46%;
@@ -565,18 +599,28 @@ footer a {
   @media (max-width: 550px) {
     #row__f img {
         position: absolute;
-        top: 73%;
-        right: 0%;
+        top: 65%;
+        right: -10%;
         height: 250px;
         color: #e2e2e2;
         
     }
+    .title {
+      position: absolute;
+      top: -150px;
+    }
+
     .title p{
         margin-top: 30px;
         
 
     }
     
+     .text__button button {
+      position: absolute;
+      top: 90%;
+      right: 15%;
+  }
 
   }
 
@@ -585,9 +629,18 @@ footer a {
     header{
         height: 850px;
     }
+
+    .title{
+      position: absolute;
+      top: -150px;
+    }
+    .title {
+      position: absolute;
+      top: -150px;
+    }
     #row__f img {
         position: absolute;
-        top: 70%;
+        top: 65%;
         right: -10%;
         height: 250px;
         color: #e2e2e2;
@@ -615,7 +668,11 @@ footer a {
     }
       .title{
           position: absolute;
-          top: -50%;
+          top: -150px;
 
+      }
+      .title {
+        position: absolute;
+        top: -150px;
       }
   }
