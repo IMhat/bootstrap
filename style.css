@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Open+Sans:wght@300&display=swap');
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -55,27 +59,27 @@ header {
     width:130px;
     height:42px;
     border-radius:10px;
-    font-family:calibri;
+    font-family:'Open Sans';
     font-weight:bold;
     font-size: 14px;
     outline:none;
     margin:0px 10px;
 }
 .text__container p:nth-child(1){
-    font-family: calibri;
+    font-family: 'Open Sans';
     font-weight:bold;
     color:#6d6d6d;
     font-size:22px ;
 }
 .text__container p:nth-child(2){
-    font-family:calibri;
+    font-family:'Open Sans';
     font-weight:bold;
     letter-spacing:1px;
     color:#c5c5c5;
     font-size:60px;
 }
 .text__container p:nth-child(3){
-    font-family: myriad pro regular;
+    font-family: 'M PLUS Rounded 1c';
     color: #403e3e;
     font-size:30px;
     line-height:30px;
@@ -217,7 +221,7 @@ footer a {
   }
   
   .dw__footer ul {
-    font-family: calibri;
+    font-family: 'Open Sans';
     margin: 0px;
     padding: 0px 20px;
   }
@@ -225,7 +229,7 @@ footer a {
   .dw__footer h1 {
     color: #9697A0;
     font-size: 20px;
-    font-family: calibri;
+    font-family: 'Open Sans';
   }
   
   .dw__footer ul li a {
@@ -305,7 +309,7 @@ footer a {
   
   .about__text p:nth-child(1) {
     color: #403e3e;
-    font-family: myriad pro;
+    font-family: 'M PLUS Rounded 1c';
     font-weight: bold;
     font-size: 23px;
     line-height: 0px;
@@ -314,21 +318,21 @@ footer a {
   .about__text p:nth-child(2) {
     color: #3e3d3d;
     font-size: 13px;
-    font-family: myriad pro;
+    font-family: 'M PLUS Rounded 1c';
     font-weight: bold;
     line-height: 5px;
   }
   
   .about__text p:nth-child(3) {
     color: #7e7d7d;
-    font-family: calibri;
+    font-family: 'Open Sans';
     font-size: 16px;
     margin-left: 15px;
   }
   
   .about__text p:nth-child(4) {
     color: #050505;
-    font-family: calibri;
+    font-family: 'Open Sans';
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
@@ -341,7 +345,7 @@ footer a {
     color: #ffffff;
     outline: none;
     border: none;
-    font-family: calibri;
+    font-family: 'Open Sans';
     background-color: #262525;
   }
 
@@ -362,7 +366,7 @@ footer a {
   }
   
   .services__text p:nth-child(1) {
-    font-family: calibri;
+    font-family: 'Open Sans';
     font-weight: bold;
     color: #1d1c1c;
     font-size: 30px;
@@ -370,7 +374,7 @@ footer a {
   }
   
   .services__text p:nth-child(2) {
-    font-family: calibri;
+    font-family: 'Open Sans';
     font-weight: bold;
     color: #3e3d3d;
     font-size: 15px;
@@ -378,7 +382,7 @@ footer a {
   }
   
   .services__text p:nth-child(3) {
-    font-family: calibri;
+    font-family: 'Open Sans';
     color: #7e7d7d;
     font-size: 15px;
   }
@@ -424,7 +428,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items:center;
-    font-family: calibri;
+    font-family: 'Open Sans';
     font-weight: bold;
   }
   
@@ -432,7 +436,7 @@ footer a {
   .box__2 p:nth-child(2),
   .box__3 p:nth-child(2) {
     color: #FFFFFF;
-    font-family: calibri;
+    font-family: 'Open Sans';
     font-size: 23px;
     line-height: 0px;
     margin-bottom: 40px;
@@ -441,7 +445,7 @@ footer a {
   .box__1 p:nth-child(3),
   .box__2 p:nth-child(3),
   .box__3 p:nth-child(3) {
-    font-family: calibri;
+    font-family: 'Open Sans';
     color: #8F8F8F;
     text-align: center;
     width: 230px;
@@ -676,3 +680,80 @@ footer a {
         top: -150px;
       }
   }
+/* Form */
+
+.contact{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.bg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  margin: 50px auto;
+  margin-top: 50px!important;
+
+}
+input, textarea{
+
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #363636;
+  box-shadow: inset 0 1px 5px #242424;
+  width: 50%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  
+  outline: none;
+  transition: all .3s ease;
+
+}
+
+form ::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  height: 200px;
+  resize: vertical;
+
+}
+
+.submit {
+  width: 25%;
+  padding: 10px 0;
+  font-size: 22px;
+  border-radius: 7px;
+  font-weight: 700;
+  border: none;
+  background-color: #242424;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 3.s ease;
+}
+
+.submit:hover{
+  background-color: rgba(92, 92, 92, 0.5);
+  box-shadow: none;
+}
